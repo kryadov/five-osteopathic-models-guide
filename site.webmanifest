@@ -1,0 +1,13 @@
+{
+  "short_name": "Osteo5",
+  "name": "Five Osteopathic Models Guide",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb"
+}

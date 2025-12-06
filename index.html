@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Руководство по 5 остеопатическим моделям ВОЗ / Five Osteopathic Models Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="app-header" role="banner">
+    <div class="brand">
+      <img src="icon.svg" alt="App icon" width="28" height="28" aria-hidden="true"/>
+      <span id="appTitle">Руководство по 5 остеопатическим моделям ВОЗ</span>
+    </div>
+    <nav class="top-controls" aria-label="Top controls">
+      <button id="langToggle" class="btn" aria-live="polite" aria-label="Toggle language">RU</button>
+      <button id="fontToggle" class="btn" aria-label="Toggle font size">A↕</button>
+      <button id="exportBtn" class="btn" aria-label="Export progress"><span id="exportLabel">Export</span></button>
+      <label for="importFile" class="btn file-label" tabindex="0"><span id="importLabel">Import</span><input type="file" id="importFile" accept="application/json"/></label>
+    </nav>
+  </header>
+
+  <div class="progress-bar" aria-label="Progress">
+    <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+  </div>
+
+  <main id="app" class="app-main" role="main" tabindex="-1" aria-live="polite">
+    <!-- Dynamic content will be injected here by app.js -->
+  </main>
+
+  <footer class="app-footer" role="contentinfo">
+    <p id="disclaimer">Дисклеймер: материал носит образовательный характер и не заменяет консультацию врача.</p>
+    <p class="small">MIT License. © 2025</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Models screen mockup">
+  <rect width="960" height="540" fill="#ffffff"/>
+  <rect x="0" y="0" width="960" height="72" fill="#f3f4f6"/>
+  <rect x="16" y="16" width="32" height="32" rx="6" fill="#2563eb" opacity="0.35"/>
+  <rect x="0" y="72" width="960" height="8" fill="#e5e7eb"/>
+  <rect x="0" y="72" width="384" height="8" fill="#2563eb" opacity="0.45"/>
+  <!-- Model cards -->
+  <g>
+    <rect x="80" y="120" width="800" height="72" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="96" y="136" width="40" height="40" rx="8" fill="#f3f4f6" stroke="#e5e7eb"/>
+    <rect x="152" y="136" width="280" height="14" rx="4" fill="#1f2937" opacity="0.8"/>
+    <rect x="152" y="156" width="520" height="10" rx="4" fill="#6b7280" opacity="0.6"/>
+    <rect x="152" y="176" width="80" height="16" rx="6" fill="#2563eb"/>
+    <rect x="240" y="176" width="64" height="16" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+  </g>
+  <g>
+    <rect x="80" y="208" width="800" height="72" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="96" y="224" width="40" height="40" rx="8" fill="#f3f4f6" stroke="#e5e7eb"/>
+    <rect x="152" y="224" width="260" height="14" rx="4" fill="#1f2937" opacity="0.8"/>
+    <rect x="152" y="244" width="520" height="10" rx="4" fill="#6b7280" opacity="0.6"/>
+    <rect x="152" y="264" width="80" height="16" rx="6" fill="#2563eb"/>
+    <rect x="240" y="264" width="64" height="16" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+  </g>
+  <g>
+    <rect x="80" y="296" width="800" height="72" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="96" y="312" width="40" height="40" rx="8" fill="#f3f4f6" stroke="#e5e7eb"/>
+    <rect x="152" y="312" width="300" height="14" rx="4" fill="#1f2937" opacity="0.8"/>
+    <rect x="152" y="332" width="520" height="10" rx="4" fill="#6b7280" opacity="0.6"/>
+    <rect x="152" y="352" width="80" height="16" rx="6" fill="#2563eb"/>
+    <rect x="240" y="352" width="64" height="16" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+  </g>
+  <text x="96" y="108" font-family="Segoe UI, Arial" font-size="18" fill="#1f2937">Models</text>
+</svg>
