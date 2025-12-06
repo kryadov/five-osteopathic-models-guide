@@ -712,6 +712,19 @@ function quizCard(model, q, n, total, onSubmit, onNext, isReview){
       onSubmit(q, user);
     });
   }, 0);
+  // Enable reordering for "order" questions immediately upon render
+  setTimeout(() => {
+    if (q.type === 'order') {
+      $$('.ordered [data-m]').forEach(btn => btn.addEventListener('click', (e) => {
+        const li = e.target.closest('li');
+        if (!li) return;
+        const ol = li.parentElement;
+        const dir = e.target.getAttribute('data-m');
+        if (dir === 'up' && li.previousElementSibling) ol.insertBefore(li, li.previousElementSibling);
+        if (dir === 'down' && li.nextElementSibling) ol.insertBefore(li.nextElementSibling, li);
+      }));
+    }
+  }, 0);
   // attach next handler on nav after render
   setTimeout(()=>{
     const nav = $('#nav');
@@ -757,16 +770,6 @@ function collectAnswer(q){
       if (sels.some(s=>!s.value)) return null; return Object.fromEntries(sels.map(s=>[s.getAttribute('data-left'), parseInt(s.value)]));
     }
     case 'order':{
-      // allow users to reorder via buttons; attach handlers if not attached
-      if (!collectAnswer._bound) {
-        collectAnswer._bound = true;
-        $$('.ordered [data-m]').forEach(btn=>btn.addEventListener('click', (e)=>{
-          const li = e.target.closest('li');
-          if (!li) return; const ol = li.parentElement; const dir = e.target.getAttribute('data-m');
-          if (dir==='up' && li.previousElementSibling) ol.insertBefore(li, li.previousElementSibling);
-          if (dir==='down' && li.nextElementSibling) ol.insertBefore(li.nextElementSibling, li);
-        }));
-      }
       const order = $$('.ordered li').map((li)=>parseInt(li.getAttribute('data-idx')));
       return order;
     }
