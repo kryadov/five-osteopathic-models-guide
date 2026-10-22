@@ -18,7 +18,9 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
+  <!-- vite-ignore: the manifest must stay at the site root, unhashed. Its relative
+       icon.png and start_url "./" would resolve under assets/ if Vite moved it there. -->
+  <link rel="manifest" href="site.webmanifest" vite-ignore>
   <meta name="theme-color" content="#fafafa">
 </head>
 
